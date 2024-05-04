@@ -72,7 +72,7 @@ with open(path to data, "rb") as f:
 Each entry in the numpy array is a dictionary representing a single table, with the following keys:
 - **features**: A numpy array of logit vectors outputted by the single-column prediction model (e.g., RECA). These vectors act as the initial features for the nodes in the graph neural network (GNN).
 - **labels**: A numpy array containing the labels for each column within the table, where each label categorizes the semantic type of the column.
-- **mask**: A numpy array of binary values (1 or 0), where 1 indicates a valid column and 0 indicates an invalid column. This helps to manage tables with varying numbers of columns.
+- **masks**: A numpy array of binary values (1 or 0), where 1 indicates a valid column and 0 indicates an invalid column. This helps to manage tables with varying numbers of columns.
 - **table_id**: A string identifier unique to each table.
 
 #### Example of Input Data
@@ -90,7 +90,7 @@ Below is an example demonstrating how a single table's data is structured within
 ```
 
 ## Model Training and Evaluation
-# Training Commands
+### Training Commands
 To train the GNN module of GAIT, execute the commands below, selecting parameters as needed for your specific requirements. Each script corresponds to a different variant of the GNN (GAT, GCN, GGNN). For detailed information on available parameters and their effects, refer to the explanation within each code. Adjust these parameters based on your dataset characteristics and training preferences:
 
 ```
