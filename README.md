@@ -101,3 +101,16 @@ python GAIT_GGNN.py --data-name dataset_semtab_4 --classes 275 --epochs 100  --n
 ```
 ### Evaluation
 To evaluate an existing model, use the `--mode eval` option with the desired model code.
+
+## Citing this Work
+To cite this work, please use the below bibtex:
+```
+@inproceedings{hoseinzade2024graph,
+  title={Graph Neural Network Approach to Semantic Type Detection in Tables},
+  author={Hoseinzade, Ehsan and Wang, Ke},
+  booktitle={Pacific-Asia Conference on Knowledge Discovery and Data Mining},
+  pages={121--133},
+  year={2024},
+  organization={Springer}
+}
+```
